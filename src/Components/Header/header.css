@@ -1,0 +1,59 @@
+/* General styles for the header */
+.header_outer_container {
+    background-color: #1a202c;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    color: white;
+  }
+  
+  /* Styling for header navigation */
+  .header_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    /* gap: 30px; */
+  }
+  .header_inner {
+    width: 60%;
+  }
+  
+  .header_inner ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .header_inner ul li {
+    margin: 0 10px;
+  }
+  
+  /* Styling for the <a> tags in the header */
+  .header_inner ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #ffffff; 
+    font-weight: 600; 
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease; 
+  }
+  
+  /* Hover effects */
+  .header_inner ul li a:hover {
+    color: #1a202c;  
+    background-color: #007bff;;  
+    transform: translateY(-2px);  
+  }
+  
+  /* Active link style */
+  .header_inner ul li a.active {
+    color: #1a202c;
+    background-color: #edf2f7;  
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
