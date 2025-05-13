@@ -14,17 +14,24 @@ function App() {
 
   return (
     <>
-      
       <Header />
 
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path="/gemini" element={<Test />} />
-        <Route path="/fake" element={<FakeStoreAPI />} />
-        <Route path="/fake/:id" element={<SingleFake />} />
+        <Route path="/API-and-react-routing-demos/" element={<Home />} />
+        <Route path="/API-and-react-routing-demos/gemini" element={<Test />} />
+        <Route
+          path="/API-and-react-routing-demos/fake"
+          element={<FakeStoreAPI />}
+        />
+        <Route
+          path="/API-and-react-routing-demos/fake/:id"
+          element={<SingleFake />}
+        />
 
-        <Route path="/random" element={<UsingRandomUser />} />
-        
+        <Route
+          path="/API-and-react-routing-demos/random"
+          element={<UsingRandomUser />}
+        />
       </Routes>
     </>
   );
