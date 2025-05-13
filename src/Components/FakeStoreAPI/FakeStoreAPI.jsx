@@ -57,7 +57,7 @@ function FakeStoreAPI() {
                     </div>
 
                     <a
-                      href={`/API-and-react-routing-demos/fake/${id}`}
+                      href={`/fake/${id}`}
                       className="more-btn"
                     >
                       more

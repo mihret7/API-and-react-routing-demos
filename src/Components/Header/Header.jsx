@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./header.css";
 
@@ -10,16 +11,16 @@ const Header = () => {
           <div className="header_inner">
             <ul>
               <li>
-                <a href="/">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="/fake">Fake Store API</a>
+                <Link to="/fake">Fake Store API</Link>
               </li>
               <li>
-                <a href="/random">Random User</a>
+                <Link to="/random">Random User</Link>
               </li>
               <li>
-                <a href="/gemini">Gemini AI</a>
+                <Link to="/gemini">Gemini AI</Link>
               </li>
             </ul>
           </div>

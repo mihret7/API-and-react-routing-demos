@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Test from './Components/GeminiAPI/GeminiAi'
+import GeminiAi from './Components/GeminiAPI/GeminiAi'
 
 import './App.css'
 import Header from './Components/Header/Header';
@@ -17,21 +17,11 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/API-and-react-routing-demos/" element={<Home />} />
-        <Route path="/API-and-react-routing-demos/gemini" element={<Test />} />
-        <Route
-          path="/API-and-react-routing-demos/fake"
-          element={<FakeStoreAPI />}
-        />
-        <Route
-          path="/API-and-react-routing-demos/fake/:id"
-          element={<SingleFake />}
-        />
-
-        <Route
-          path="/API-and-react-routing-demos/random"
-          element={<UsingRandomUser />}
-        />
+        <Route path="/" element={<Home />} />
+        <Route path="/fake" element={<FakeStoreAPI />} />
+        <Route path="/fake/:id" element={<SingleFake />} />
+        <Route path="/random" element={<UsingRandomUser />} />
+        <Route path="/gemini" element={<GeminiAi />} />
       </Routes>
     </>
   );
