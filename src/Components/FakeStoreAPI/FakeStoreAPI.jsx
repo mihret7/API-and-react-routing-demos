@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "./FakeStoreAPI.css"
-
+import { Link } from "react-router-dom";
 
 
 
@@ -56,12 +56,12 @@ function FakeStoreAPI() {
                       <div className="productDesc fw-bold">${price}</div>
                     </div>
 
-                    <a
-                      href={`/fake/${id}`}
+                    <Link
+                      to={`/fake/${id}`}
                       className="more-btn"
                     >
                       more
-                    </a>
+                    </Link>
                   </div>
                 </div>
               );
